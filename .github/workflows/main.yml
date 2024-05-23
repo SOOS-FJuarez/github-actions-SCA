@@ -13,6 +13,7 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        on_failure: test
+        on_failure: continue_on_failure
+        source_code_path: "manifests"
         verbose: true
        
