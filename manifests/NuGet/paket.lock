@@ -1,0 +1,11 @@
+NUGET
+  remote: https://api.nuget.org/v3/index.json 
+    AutoMapper (9.0.0) 
+    Azure.Core (>= 2.0.0) 
+      System.Diagnostics.DiagnosticSource (4.6.0) 
+    NLog (<= 5.0.0) - restriction: || (== thing1.0) (== thing2.0) 
+      System.Net.Http (4.3.4) 
+      System.Xml.XmlDocument (4.3.0) 
+GITHUB 
+  remote: remotething 
+    It shouldn't grab (this line)

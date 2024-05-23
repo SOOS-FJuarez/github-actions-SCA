@@ -1,0 +1,15 @@
+source https://api.nuget.org/v3/index.json
+
+// NuGet packages
+nuget NUnit ~> 2.6.3
+nuget FAKE ~> 3.4
+nuget DotNetZip >= 1.9
+
+// Files from GitHub repositories.
+github forki/FsUnit FsUnit.fs
+
+// Gist files.
+gist Thorium/1972349 timestamp.fs
+
+// HTTP resources.
+http http://www.fssnip.net/1n decrypt.fs
