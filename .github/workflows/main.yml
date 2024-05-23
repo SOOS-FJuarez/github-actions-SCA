@@ -15,5 +15,6 @@ jobs:
         api_url: 'https://qa-api.soos.io/api/'
         on_failure: continue_on_failure
         build_version: "4.6.3"
+        branch_name: "testing-branch"
         verbose: true
        
