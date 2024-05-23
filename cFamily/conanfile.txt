@@ -1,0 +1,18 @@
+[requires]
+poco/[>1.0,<1.9]
+zlib/1.2.11
+
+[generators]
+cmake
+
+[options]
+poco:shared=True
+openssl:shared=True
+
+[tool_requires]
+7zip/19.00
+cmake/3.22.6
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my local "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my local "bin" folder
