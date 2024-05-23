@@ -15,7 +15,7 @@ jobs:
         api_url: 'https://qa-api.soos.io/api/'
         files_to_exclude: "**/brew/**, **/NPM/**"
         directories_to_exclude: "**/GO files/**, **/python/**"
-        pacakge_managers: "CFamily,Dart,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust"
+        package_managers: "CFamily,Dart,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust"
         branch_name: "branch-test"
         verbose: true
        
