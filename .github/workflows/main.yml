@@ -13,8 +13,5 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        files_to_exclude: "requirements.txt"
-        directories_to_exclude: "cfamily/**"
-        on_failure: "continue_on_failure"
-        verbose: true
-       
+        log_level: "DEBUG"
+        package_managers: "CFamily,Dart,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust"
