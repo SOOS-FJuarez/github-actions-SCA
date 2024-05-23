@@ -13,9 +13,9 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        on_failure: fail_the_build
-        build_version: "4.6.3"
-        files_to_exclude: "**/brew/**"
-        directories_to_exclude: "**/GO files/**"
+        files_to_exclude: "**/brew/**, **/NPM/**"
+        directories_to_exclude: "**/GO files/**, **/python/**"
+        pacakge_managers: "CFamily,Dart,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust"
+        branch_name: "branch-test"
         verbose: true
        
