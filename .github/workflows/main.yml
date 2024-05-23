@@ -13,9 +13,8 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        files_to_exclude: "**/nuget/**, **/nodeJS/**"
-        directories_to_exclude: "**/GO files/**, **/python/**"
+        files_to_exclude: "requirements.txt"
+        directories_to_exclude: "cfamily/**"
         on_failure: "continue_on_failure"
-        output_format: "SARIF"
-        verbose: false
+        verbose: true
        
