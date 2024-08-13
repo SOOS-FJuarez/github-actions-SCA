@@ -7,11 +7,17 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS - Scan for vulnerabilities
-      uses: soos-io/soos-sca-github-action@v2.0.0 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
+      uses: soos-io/soos-sca-github-action@v2 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
         project_name: "GitHub Actions - SCA"
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
-        api_url: 'https://qa-api.soos.io/api/'
+        #api_url: 'https://qa-api.soos.io/api/'
         log_level: "DEBUG"
-        package_managers: "CFamily,Dart,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust"
+        package_managers: "CFamily,Dart,Erlang,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust,Unity"
+        on_failure: "continue_on_failure"
+        build_version: 4.1.1
+        branch_name: "production"
+        directories_to_exclude: '**/go files/**'
+        files_to_exclude: '**/package.json'
+        verbose: true
