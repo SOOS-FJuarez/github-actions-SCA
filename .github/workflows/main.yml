@@ -20,5 +20,5 @@ jobs:
         branch_name: "QA"
         directories_to_exclude: '**/go files/**'
         files_to_exclude: '**/package.json'
-        sca_version: 80e074a8cb1edf059e69ae51377a7ee32f8d31e7
+        sca_version: latest
         verbose: true
