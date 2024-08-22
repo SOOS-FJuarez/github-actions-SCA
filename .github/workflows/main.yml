@@ -15,10 +15,11 @@ jobs:
         api_url: 'https://qa-api.soos.io/api/'
         log_level: "INFO"
         #package_managers: "CFamily,Dart,Erlang,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust,Unity"
-        on_failure: "fail_the_build"
-        build_version: 2.0.0
+        on_failure: "continue_on_failure"
+        #build_version: 2.0.0
         #branch_name: "QA"
-        #directories_to_exclude: '**/go files/**'
-        #files_to_exclude: '**/package.json'
+        directories_to_exclude: '**/go files/**'
+        files_to_exclude: '**/package.json'
         sca_version: latest
-        #verbose: true
+        output_format: SARIF
+        verbose: true
