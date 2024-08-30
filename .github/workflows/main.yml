@@ -14,7 +14,7 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://api.soos.io/api/'
         log_level: "DEBUG"
-        #package_managers: "CFamily,Dart,Erlang,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust,Unity"
+        package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
         on_failure: "continue_on_failure"
         #build_version: 2.0.0
         directories_to_exclude: '**/go files/**'
