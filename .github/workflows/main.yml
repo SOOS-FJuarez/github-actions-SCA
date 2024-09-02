@@ -9,11 +9,11 @@ jobs:
     - name: Run SOOS - Scan for vulnerabilities
       uses: soos-io/soos-sca-github-action@472bfc5d7f7f3d3ebe1df84a1e7c6401affafbe4 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
-        project_name: "GitHub Actions - SCA old version"  
+        project_name: "GitHub Actions - SCA"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        log_level: "DEBUG"
+        log_level: "INFO"
         package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
         on_failure: "continue_on_failure"
         #build_version: 2.0.0
