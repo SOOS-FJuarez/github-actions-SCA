@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS - Scan for vulnerabilities
-      uses: soos-io/soos-sca-github-action@v2.1.1 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
+      uses: soos-io/soos-sca-github-action@v2.1.2 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
         project_name: "GitHub Actions - SCA from branch with v2.1.2"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
