@@ -14,10 +14,12 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: "DEBUG"
-        package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
+        #package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
         on_failure: "fail_the_build"
-        directories_to_exclude: '**/go files/**'
-        files_to_exclude: '**/package.json'
+        directories_to_exclude: 'cFamily/**'
+        files_to_exclude: '**/npm/Package.json'
+        #directories_to_exclude: '**/go files/**'
+        #files_to_exclude: '**/package.json'
         #branch_name: "test-main"
         #verbose: true
         #sca_version: 3.0.5
