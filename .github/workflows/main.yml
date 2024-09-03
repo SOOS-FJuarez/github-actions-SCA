@@ -13,7 +13,7 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        log_level: "WARN"
+        log_level: "DEBUG"
         package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
         on_failure: "fail_the_build"
         directories_to_exclude: '**/go files/**'
