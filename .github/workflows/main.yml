@@ -14,10 +14,10 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: "DEBUG"
-        package_managers: "CFamily,Dart,Erlang,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust,Unity"
+        package_managers: "cfamily,Dart,Erlang,Go,Homebrew,Java,npm,nuget,Php,Python,Ruby,Rust,Unity"
+        directories_to_exclude: 'cFamily/'
+        files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
-        #directories_to_exclude: '**/go files/**'
-        #files_to_exclude: '**/package.json, **/nuget vbproj manifest.vbproj'
         #branch_name: "test-branch" 
         #verbose: true
         #sca_version: 3.0.5
