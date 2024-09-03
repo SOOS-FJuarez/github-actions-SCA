@@ -13,15 +13,13 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        #log_level: "DEBUG"
-        #package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
-        on_failure: "continue_on_failure"
-        #directories_to_exclude: 'manifests/java/**, manifests/PHP/**, invalid/**'
-        #files_to_exclude: 'manifests/node/npm/package.json, **/ruby/GEMFILE, invalid/package.json'
-        directories_to_exclude: '**/go files/**'
-        files_to_exclude: '**/package.json, **/nuget vbproj manifest.vbproj'
+        log_level: "DEBUG"
+        package_managers: "CFamily,Dart,Erlang,Go,Homebrew,Java,NPM,NuGet,Php,Python,Ruby,Rust,Unity"
+        #on_failure: "continue_on_failure"
+        #directories_to_exclude: '**/go files/**'
+        #files_to_exclude: '**/package.json, **/nuget vbproj manifest.vbproj'
         #branch_name: "test-branch" 
         #verbose: true
         #sca_version: 3.0.5
         #build_version: 2.0.0
-        output_format: SARIF 
+        #output_format: SARIF 
