@@ -17,7 +17,7 @@ jobs:
         #package_managers: "Go,Homebrew,Java,NPM,NuGet,Python"
         #on_failure: "fail_the_build"
         directories_to_exclude: 'manifests/java/**, manifests/PHP/**, invalid/**'
-        files_to_exclude: 'manifests/node/npm/package.json, **/ruby/GEMFILE", invalid/package.json'
+        files_to_exclude: 'manifests/node/npm/package.json, **/ruby/GEMFILE, invalid/package.json'
         #directories_to_exclude: '**/go files/**'
         #files_to_exclude: '**/package.json'
         branch_name: "test-branch" 
