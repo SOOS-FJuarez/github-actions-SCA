@@ -18,7 +18,7 @@ jobs:
         #directories_to_exclude: 'cFamily/'
         #files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
-        #branch_name: "test-branch" 
+        branch_name: "test-branch-prod" 
         #verbose: true
         #sca_version: 3.0.5
         #build_version: 2.0.0
