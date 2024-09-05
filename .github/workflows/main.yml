@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS - Scan for vulnerabilities
-      uses: soos-io/soos-sca-github-action@v2 #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
+      uses: soos-io/soos-sca-github-action@a816c5c6b56afb5168c60144b8d260852c24cc87 #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
         project_name: "GitHub Actions - SCA PROD"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
@@ -18,8 +18,8 @@ jobs:
         #directories_to_exclude: 'cFamily/'
         #files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
-        branch_name: "test-branch-prod" 
+        #branch_name: "test-branch-prod" 
         #verbose: true
-        #sca_version: 3.0.5
+        #sca_version: latest
         #build_version: 2.0.0
-        output_format: SARIF 
+        #output_format: SARIF 
