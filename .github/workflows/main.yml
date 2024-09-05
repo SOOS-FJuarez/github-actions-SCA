@@ -12,7 +12,7 @@ jobs:
         project_name: "GitHub Actions - SCA PROD"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
-        api_url: 'https://api.soos.io/api/'
+        api_url: 'https://qa-api.soos.io/api/'
         log_level: "DEBUG"
         package_managers: "cFamily"
         #directories_to_exclude: 'cFamily/'
@@ -20,6 +20,6 @@ jobs:
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
         #verbose: true
-        #sca_version: latest
+        sca_version: invalid
         #build_version: 2.0.0
         #output_format: SARIF 
