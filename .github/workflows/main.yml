@@ -20,6 +20,6 @@ jobs:
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
         #verbose: true
-        sca_version: 3.0.5
+        sca_version: 4.0.0-pre.1
         #build_version: 2.0.0
         #output_format: SARIF 
