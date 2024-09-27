@@ -7,19 +7,16 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS - Scan for vulnerabilities
-      uses: soos-io/soos-sca-github-action@a816c5c6b56afb5168c60144b8d260852c24cc87 #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
+      uses: soos-io/soos-sca-github-action@1e9a27b3309aa7c8fea70f41c77609977ed8d407 #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
-        project_name: "GitHub Actions - SCA PROD"  
+        project_name: "GitHub Actions - SCA"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: "DEBUG"
-        package_managers: "cFamily"
+        package_managers: "swift"
         #directories_to_exclude: 'cFamily/'
         #files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
-        #verbose: true
-        sca_version: 4.0.0-pre.1
-        #build_version: 2.0.0
-        #output_format: SARIF 
+        sca_version: 4.0.1-pre.1 
