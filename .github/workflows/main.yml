@@ -14,10 +14,11 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: "INFO"
-        #package_managers: "test" 
+        package_managers: "cFamily" 
         #directories_to_exclude: 'cFamily/'
         #files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
-        sca_version: 4.0.3-pre.1
-        verbose: true
+        sca_version: 4.0.4-pre.1
+        output_format: SARIF
+        #verbose: true
