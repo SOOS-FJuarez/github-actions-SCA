@@ -19,6 +19,6 @@ jobs:
         #files_to_exclude: 'requirements.txt'
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
-        sca_version: 4.0.4-pre.1
+        sca_version: 4.0.5-pre.1
         #output_format: SARIF
         #verbose: true
