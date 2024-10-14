@@ -20,5 +20,5 @@ jobs:
         #on_failure: "continue_on_failure"
         #branch_name: "test-branch-prod" 
         sca_version: 4.0.4-pre.1
-        output_format: SARIF
+        #output_format: SARIF
         #verbose: true
