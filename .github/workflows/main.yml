@@ -25,6 +25,7 @@ jobs:
         sca_version: 4.0.5-pre.1
         #output_format: SARIF
         #verbose: true
+        test: 123
     - name: Upload SOOS SARIF Report
       uses: github/codeql-action/upload-sarif@v3
       with:
