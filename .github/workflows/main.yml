@@ -19,15 +19,15 @@ jobs:
         log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: cyclonedx
-        export_file_type: xml
+        export_format: csafvex
+        export_file_type: json
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
       with:
         name: sast-analysis-output
         path: |
-              ${{ github.workspace }}/*.cyclonedx.json
+              ${{ github.workspace }}/*.cdx.json
               ${{ github.workspace }}/*.cdx.xml
               ${{ github.workspace }}/*.spdx.json
               ${{ github.workspace }}/*.spdx.txt
