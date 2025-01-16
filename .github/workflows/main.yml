@@ -19,14 +19,26 @@ jobs:
         log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.12-pre.1
-        export_format: SARIF
-        export_file_type: JSON
+        export_format: soosissues
+        export_file_type: html
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
       with:
         name: sast-analysis-output
         path: |
+              ${{ github.workspace }}/*.cyclonedx.json
+              ${{ github.workspace }}/*.cyclonedx.xml
+              ${{ github.workspace }}/*.spdx.json
+              ${{ github.workspace }}/*.spdx.txt
               ${{ github.workspace }}/*.sarif.json
-              ${{ github.workspace }}/*.txt
+              ${{ github.workspace }}/*.csafvex.json
+              ${{ github.workspace }}/*.sooslicenses.hmtl
+              ${{ github.workspace }}/*.sooslicenses.csv
+              ${{ github.workspace }}/*.soospackages.hmtl
+              ${{ github.workspace }}/*.soospackages.csv
+              ${{ github.workspace }}/*.soosvulnerabilities.hmtl
+              ${{ github.workspace }}/*.soosvulnerabilities.csv
+              ${{ github.workspace }}/*.soosissues.hmtl
+              ${{ github.workspace }}/*.soosissues.csv
               
