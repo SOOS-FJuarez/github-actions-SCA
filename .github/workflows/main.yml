@@ -19,15 +19,16 @@ jobs:
         #log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: soosissues
-        export_file_type: csv
-        output_directory: test
+        #export_format: SARIF
+        #export_file_type: JSON
+        output_directory: output
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
       with:
         name: sast-analysis-output
         path: |
+              ${{ github.workspace }}/output/*.cdx.json
               ${{ github.workspace }}/*.cdx.json
               ${{ github.workspace }}/*.cdx.xml
               ${{ github.workspace }}/*.spdx.json
