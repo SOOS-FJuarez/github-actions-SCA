@@ -19,28 +19,28 @@ jobs:
         #log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        #export_format: SARIF
-        #export_file_type: JSON
+        export_format: cyclonedx
+        export_file_type: json
         output_directory: output
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
       with:
-        name: sast-analysis-output
+        name: sca-analysis-output
         path: |
               ${{ github.workspace }}/output/*.cdx.json
-              ${{ github.workspace }}/*.cdx.json
-              ${{ github.workspace }}/*.cdx.xml
-              ${{ github.workspace }}/*.spdx.json
-              ${{ github.workspace }}/*.spdx.txt
-              ${{ github.workspace }}/*.sarif.json
-              ${{ github.workspace }}/*.csafvex.json
-              ${{ github.workspace }}/*.sooslicenses.hmtl
-              ${{ github.workspace }}/*.sooslicenses.csv
-              ${{ github.workspace }}/*.soospackages.hmtl
-              ${{ github.workspace }}/*.soospackages.csv
-              ${{ github.workspace }}/*.soosvulnerabilities.hmtl
-              ${{ github.workspace }}/*.soosvulnerabilities.csv
-              ${{ github.workspace }}/*.soosissues.hmtl
-              ${{ github.workspace }}/*.soosissues.csv
+              ${{ github.workspace }}/output/*.cdx.json
+              ${{ github.workspace }}/output/*.cdx.xml
+              ${{ github.workspace }}/output/*.spdx.json
+              ${{ github.workspace }}/output/*.spdx.txt
+              ${{ github.workspace }}/output/*.sarif.json
+              ${{ github.workspace }}/output/*.csafvex.json
+              ${{ github.workspace }}/output/*.sooslicenses.hmtl
+              ${{ github.workspace }}/output/*.sooslicenses.csv
+              ${{ github.workspace }}/output/*.soospackages.hmtl
+              ${{ github.workspace }}/output/*.soospackages.csv
+              ${{ github.workspace }}/output/*.soosvulnerabilities.hmtl
+              ${{ github.workspace }}/output/*.soosvulnerabilities.csv
+              ${{ github.workspace }}/output/*.soosissues.hmtl
+              ${{ github.workspace }}/output/*.soosissues.csv
               
