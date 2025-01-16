@@ -29,7 +29,6 @@ jobs:
         name: sca-analysis-output
         path: |
               ${{ github.workspace }}/output/*.cdx.json
-              ${{ github.workspace }}/output/*.cdx.json
               ${{ github.workspace }}/output/*.cdx.xml
               ${{ github.workspace }}/output/*.spdx.json
               ${{ github.workspace }}/output/*.spdx.txt
