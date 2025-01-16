@@ -34,12 +34,12 @@ jobs:
               ${{ github.workspace }}/output/*.spdx.txt
               ${{ github.workspace }}/output/*.sarif.json
               ${{ github.workspace }}/output/*.csafvex.json
-              ${{ github.workspace }}/output/*.sooslicenses.hmtl
+              ${{ github.workspace }}/output/*.sooslicenses.html
               ${{ github.workspace }}/output/*.sooslicenses.csv
-              ${{ github.workspace }}/output/*.soospackages.hmtl
+              ${{ github.workspace }}/output/*.soospackages.html
               ${{ github.workspace }}/output/*.soospackages.csv
-              ${{ github.workspace }}/output/*.soosvulnerabilities.hmtl
+              ${{ github.workspace }}/output/*.soosvulnerabilities.html
               ${{ github.workspace }}/output/*.soosvulnerabilities.csv
-              ${{ github.workspace }}/output/*.soosissues.hmtl
+              ${{ github.workspace }}/output/*.soosissues.html
               ${{ github.workspace }}/output/*.soosissues.csv
               
