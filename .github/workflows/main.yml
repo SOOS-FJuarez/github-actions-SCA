@@ -10,23 +10,17 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS - Scan for vulnerabilities
-      uses: soos-io/soos-sca-github-action@070148fd93ad76183d79aa793944ee3ec0646acd #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
+      uses: soos-io/soos-sca-github-action@735f232aff5e11487d6f76d2f863ab2954fda777 #Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
         project_name: "GitHub Actions - SCA"  
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: DEBUG
-        package_managers: "cFamily" 
-        #directories_to_exclude: 'cFamily/'
-        #files_to_exclude: 'requirements.txt'
-        #on_failure: "continue_on_failure"
-        #branch_name: "test-branch-prod" 
-        sca_version: latest
-        #output_format: SARIF
-        #verbose: true
-        source_code_path: 123ad
-        working_directory: output
+        package_managers: "cFamily"  
+        sca_version: 4.0.12-pre.1
+        export_format: SARIF
+        export_file_type: JSON
     - name: Upload SOOS SARIF Report
       uses: github/codeql-action/upload-sarif@v3
       with:
