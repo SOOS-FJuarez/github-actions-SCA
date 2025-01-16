@@ -21,7 +21,9 @@ jobs:
         sca_version: 4.0.12-pre.1
         export_format: SARIF
         export_file_type: JSON
-    - name: Upload SOOS SARIF Report
-      uses: github/codeql-action/upload-sarif@v3
+        
+      # Cargar el directorio generado como artefacto
+    - uses: actions/upload-artifact@v4
       with:
-        sarif_file: results.sarif
+        name: sast-analysis-output
+        path: /home/runner/work/gh-actions-SAST/gh-actions-SAST
