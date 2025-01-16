@@ -28,7 +28,7 @@ jobs:
         name: sast-analysis-output
         path: |
               ${{ github.workspace }}/*.cyclonedx.json
-              ${{ github.workspace }}/*.cyclonedx.xml
+              ${{ github.workspace }}/*.cdx.xml
               ${{ github.workspace }}/*.spdx.json
               ${{ github.workspace }}/*.spdx.txt
               ${{ github.workspace }}/*.sarif.json
