@@ -19,8 +19,8 @@ jobs:
         #log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: sooslicenses
-        export_file_type: html
+        export_format: soosissues
+        export_file_type: csv
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
