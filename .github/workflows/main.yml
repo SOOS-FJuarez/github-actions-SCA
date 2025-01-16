@@ -19,7 +19,7 @@ jobs:
         log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.12-pre.1
-        #export_format: SARIF
+        export_format: test
         export_file_type: JSON
         
       # Cargar el directorio generado como artefacto
