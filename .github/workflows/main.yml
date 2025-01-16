@@ -19,8 +19,8 @@ jobs:
         #log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: cyclonedx
-        export_file_type: json
+        export_format: soosvulnerabilities
+        export_file_type: html
         output_directory: output
         
       # Cargar el directorio generado como artefacto
