@@ -16,7 +16,7 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        log_level: DEBUG
+        #log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
         export_format: csafvex
