@@ -21,7 +21,7 @@ jobs:
         sca_version: 4.0.13-pre.1
         export_format: soosvulnerabilities
         export_file_type: csv
-        output_directory: output
+        #output_directory: output
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
