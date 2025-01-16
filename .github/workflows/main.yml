@@ -20,7 +20,7 @@ jobs:
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
         export_format: soosissues
-        export_file_type: csv
+        export_file_type: test
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
