@@ -26,4 +26,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: sast-analysis-output
-        path: /home/runner/work/gh-actions-SAST/gh-actions-SAST
+        path: /home/runner/work/github-actions-SCA/github-actions-SCA
