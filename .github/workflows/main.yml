@@ -17,12 +17,12 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: DEBUG
-        package_managers: "cFamily"  
+        #package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
         export_format: cyclonedx
-        export_file_type: json
+        export_file_type: xml
         output_directory: output
-        output_format: SARIF
+        
         
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
