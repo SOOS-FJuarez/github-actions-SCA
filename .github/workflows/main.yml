@@ -19,7 +19,7 @@ jobs:
         log_level: DEBUG
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: soosissues
+        export_format: cyclonedx
         export_file_type: html
         output_directory: output
         output_format: SARIF
