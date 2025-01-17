@@ -17,11 +17,15 @@ jobs:
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
         log_level: DEBUG
-        #package_managers: "cFamily"  
+        package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
-        export_format: cyclonedx
-        export_file_type: xml
+        export_format: SARIF
+        export_file_type: JSON
         output_directory: output
+    - name: Upload SOOS DAST SARIF Report
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+          sarif_file: sarif.json
         
         
       # Cargar el directorio generado como artefacto
