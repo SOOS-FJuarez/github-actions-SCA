@@ -44,13 +44,17 @@ jobs:
               ${{ github.workspace }}/output/*.soosissues.html
               ${{ github.workspace }}/output/*.soosissues.csv
 
+    - name: Get SARIF file
+      id: get-sarif
+      run: |
+        FILE=$(ls ${{ github.workspace }}/output/*.sarif.json | head -n 1)
+        echo "sarif_file=$FILE" >> $GITHUB_ENV
+
     - name: Upload SOOS SARIF Report
       uses: github/codeql-action/upload-sarif@v3
       with:
-          sarif_file: ${{ github.workspace }}/output/*.sarif.json
+          sarif_file: ${{ env.sarif_file }}
 
-    - name: List files in output directory
-      run: ls -l ${{ github.workspace }}/output
 
         
     
