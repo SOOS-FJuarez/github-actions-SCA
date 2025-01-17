@@ -22,10 +22,11 @@ jobs:
         export_format: SARIF
         export_file_type: JSON
         output_directory: output
-    - name: Upload SOOS DAST SARIF Report
+        
+    - name: Upload SOOS SARIF Report
       uses: github/codeql-action/upload-sarif@v3
       with:
-          sarif_file: sarif.json
+          sarif_file: ${{ github.workspace }}/output/*.sarif.json
         
         
       # Cargar el directorio generado como artefacto
