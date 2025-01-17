@@ -16,23 +16,14 @@ jobs:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
         api_url: 'https://qa-api.soos.io/api/'
-        log_level: DEBUG
+        #log_level: DEBUG
         package_managers: "php"  
         sca_version: 4.0.13-pre.1
         export_format: SARIF
         export_file_type: JSON
         output_directory: output
         
-    - name: Upload SOOS SARIF Report
-      uses: github/codeql-action/upload-sarif@v3
-      with:
-          sarif_file: ${{ github.workspace }}/output/*.sarif.json
-
-    - name: List files in output directory
-      run: ls -l ${{ github.workspace }}/output
-
-        
-        
+    
       # Cargar el directorio generado como artefacto
     - uses: actions/upload-artifact@v4
       with:
@@ -52,4 +43,15 @@ jobs:
               ${{ github.workspace }}/output/*.soosvulnerabilities.csv
               ${{ github.workspace }}/output/*.soosissues.html
               ${{ github.workspace }}/output/*.soosissues.csv
+
+    - name: Upload SOOS SARIF Report
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+          sarif_file: ${{ github.workspace }}/output/*.sarif.json
+
+    - name: List files in output directory
+      run: ls -l ${{ github.workspace }}/output
+
+        
+    
               
