@@ -20,7 +20,7 @@ jobs:
         package_managers: "cFamily"  
         sca_version: 4.0.13-pre.1
         export_format: cyclonedx
-        export_file_type: html
+        export_file_type: json
         output_directory: output
         output_format: SARIF
         
