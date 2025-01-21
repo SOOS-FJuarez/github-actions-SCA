@@ -50,10 +50,10 @@ jobs:
         FILE=$(ls ${{ github.workspace }}/output/*.sarif.json | head -n 1)
         echo "sarif_file=$FILE" >> $GITHUB_ENV
 
-    - name: Upload SOOS SARIF Report
-      uses: github/codeql-action/upload-sarif@v3
-      with:
-          sarif_file: ${{ env.sarif_file }}
+   # - name: Upload SOOS SARIF Report
+   #   uses: github/codeql-action/upload-sarif@v3
+   #   with:
+   #       sarif_file: ${{ env.sarif_file }}
 
 
         
