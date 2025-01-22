@@ -19,7 +19,7 @@ jobs:
         log_level: DEBUG
         package_managers: "php"  
         sca_version: latest
-        export_format: Cyclonedx
+        export_format: sarif
         export_file_type: JSON
         output_directory: output
         
