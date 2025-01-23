@@ -22,7 +22,7 @@ jobs:
         export_format: sarif
         export_file_type: JSON
         output_directory: output
-        output_format: SARIF
+        verbose: true
         
     
       # Cargar el directorio generado como artefacto
