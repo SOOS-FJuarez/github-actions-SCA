@@ -19,10 +19,10 @@ jobs:
         log_level: DEBUG
         package_managers: "php"  
         sca_version: latest
-        export_format: sarif
-        export_file_type: JSON
-        output_directory: output
-        verbose: true
+        #export_format: sarif
+        #export_file_type: JSON
+        #output_directory: output
+        output_format: SARIF
         
     
       # Cargar el directorio generado como artefacto
