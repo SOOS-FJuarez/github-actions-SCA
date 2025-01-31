@@ -18,7 +18,7 @@ jobs:
         api_url: 'https://api.soos.io/api/'
         log_level: DEBUG
         package_managers: "php"  
-        sca_version: latest
+        sca_version: 4.0.15-pre.2
         export_format: sarif
         export_file_type: JSON
         output_directory: output
